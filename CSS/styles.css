@@ -1,0 +1,301 @@
+@import url(./fonts.css);
+@import url(./common.css);
+
+/* header */
+.header {
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    min-height: 320px;
+    padding: 30px 20px;
+    display: flex;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.header:hover {
+    max-width: 234px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.nav__item svg path {
+    transition: 0.4s;
+}
+
+.nav__item:hover svg path {
+    fill: #2A86B1;
+}
+
+.nav__item p {
+    transition: 0.4s;
+}
+
+.nav__item:hover p {
+    color: #2A86B1;
+}
+
+.nav__list {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.header__logo {
+    max-width: 60px;
+}
+
+.header__avatar {
+    max-width: 71px;
+}
+
+.nav__title {
+    font-size: 18px;
+    color: #939393;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav__burger {
+    display: none;
+}
+
+.nav__link {
+    display: flex;
+    gap: 29px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+/* welcome */
+.welcome {
+    max-width: 1110px;
+    min-height: 500px;
+    background: url(../img/main/welcome/Фон.png), #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 111px 62px;
+    border-radius: 15px;
+    z-index: 11;
+}
+
+.welcome__title {
+    max-width: 332px;
+    color: #464748;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.welcome__title::before {
+    content: "";
+    position: absolute;
+    width: 107px;
+    height: 55px;
+    background: #3FA5D5;
+    z-index: -1;
+}
+
+.welcome__text {
+    max-width: 314px;
+    color: #696868;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.welcome__btn {
+    border-radius: 30px;
+    color: #fff;
+}
+
+/* welcome */
+
+.about__us {
+    margin: 30px 0 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about__box {
+    padding: 32px 0 19px;
+    max-width: 255px;
+    height: 338px;
+    width: 100%;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__img {
+    max-width: 100px;
+}
+
+.about__subtitle {
+    color: #2A86B1;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* news */
+.news {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.news__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news__title {
+    max-width: 720px;
+    color: #686868;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.news__box-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news__text {
+    max-width: 825px;
+    color: #545454;
+    font-size: 16px;
+    font-weight: 400;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.news__box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news__box3 {
+    max-width: 255px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 15px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.news__box3-img {
+    height: 55px;
+    max-width: 55px;
+}
+
+.news__box3-title {
+    margin-top: 5px;
+    color: #686868;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.news__box3-subtitle {
+    width: 100%;
+    color: #323232;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.news__box3-text {
+    width: 100%;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 5px;
+    line-height: 13.23px;
+}
+
+.new__box-seperate {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* news */
+
+/* footer */
+.footer {
+    background: #3FA5D5;
+    width: 100%;
+}
+
+.footer>.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.footer>.container div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__number:hover {
+    text-decoration: underline;
+}
+
+.footer__email {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer__email:hover {
+    text-decoration: underline;
+}
+
+/* footer */
